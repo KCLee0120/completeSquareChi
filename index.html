@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+	<title>配方法練習</title>
+	<script
+			src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+			tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+		});
+	</script>
+  <script src="completingS.js"></script>
+
+</head>
+
+<body>
+  <p style="font-size:20px;"><strong>配方法練習</strong></p>
+  <p style="font-size:16px;">運用配方法重寫下列二次函數至頂點式 $y=a(x-h)^2+k$。</p>
+
+  <div id="questions"></div>
+
+	<br><button onclick="showAnswers()">展示詳解</button>
+	<button onclick="showQuestion()">重設</button>
+	<div id="answers" ></div>
+
+  <script>showQuestion();</script>
+
+</body>
+
+</html>
